@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ShipsService } from '../services/ships.service';
+import {ShipsResource} from '../resources/ships.resource';
+import {Ship} from '../Models/ship';
 
 @Component({
   selector: 'app-ship-list',
@@ -8,14 +9,16 @@ import { ShipsService } from '../services/ships.service';
 })
 export class ShipListComponent implements OnInit {
 
-  public shipList: Array<any>;
-
-  constructor( private shipService: ShipsService) { }
+  public shipList: Array<Ship>;
+  constructor( private shipsResource: ShipsResource) { }
 
   ngOnInit() {
-    this.shipService.getShipList().subscribe( result => {
+    this.shipsResource.getShipList().subscribe( result => {
       this.shipList = result.results;
     });
   }
 
+  showModel(ship: Ship) {
+      ship.showModel = true;
+  }
 }

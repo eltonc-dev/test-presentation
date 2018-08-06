@@ -1,4 +1,8 @@
-ship list Component
-<ul>
-  <li *ngFor="let ship of shipList" > {{ship.name}}</li>
+Lista de naves star wars
+<ul  id="ship-list">
+  <li *ngFor="let ship of shipList" >
+    Nome: {{ship.name}}
+    <div *ngIf="ship.showModel">Modelo: {{ship.model}}</div>
+    <button (click)="showModel(ship)"  >+</button>
+  </li>
 </ul>

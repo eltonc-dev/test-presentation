@@ -1,0 +1,11 @@
+<div>
+  <input #val1 id="concatInput1" type="text" placeholder="valor 1">
+</div>
+
+<div>
+  <input #val2 id="concatInput2" type="text" placeholder="valor 2">
+</div>
+
+<button (click)="concat(val1.value, val2.value)">concat</button>
+
+<div>{{concatValue}}</div>

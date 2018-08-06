@@ -5,7 +5,7 @@
     background-color: #E61A58;
     color: white;
     padding: 20px;
-    font: arial;
+    font-family: Arial;
 }
 
 .title-box h1 {
@@ -23,5 +23,9 @@
     color: #CBCBCB;
     font-size: 14px;
     padding: 20px;
-    font: arial;
+    font-family: Arial;
+}
+
+.link-list a {
+  margin: 10px;
 }

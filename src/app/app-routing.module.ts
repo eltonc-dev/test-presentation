@@ -1,12 +1,14 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
-import { ShipListComponent } from './ship-list/ship-list.component';
-import { AppComponent } from './app.component';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {ShipListComponent} from './ship-list/ship-list.component';
+import {IncreaseComponent} from './increase/increase.component';
+import {ComcatComponent} from './comcat/comcat.component';
 
 export const appRoutes: Routes = [
   { path: '*', redirectTo: '/', pathMatch: 'full' },
-  { path: 'ship-list', component: ShipListComponent}
+  { path: 'increase-component', component: IncreaseComponent},
+  { path: 'ship-list', component: ShipListComponent},
+  { path: 'concat-component', component: ComcatComponent}
 
 ];
 

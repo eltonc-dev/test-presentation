@@ -6,7 +6,7 @@ import { HttpClient, HttpResponse } from '@angular/common/http/';
 @Injectable({
   providedIn: 'root'
 })
-export class ShipsService {
+export class ShipsResource {
 
   constructor( private httpClient: HttpClient ) { }
 

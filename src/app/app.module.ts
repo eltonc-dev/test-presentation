@@ -6,12 +6,14 @@ import { IncreaseComponent } from './increase/increase.component';
 import { ShipListComponent } from './ship-list/ship-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http/';
+import { ComcatComponent } from './comcat/comcat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IncreaseComponent,
-    ShipListComponent
+    ShipListComponent,
+    ComcatComponent
   ],
   imports: [
     BrowserModule,
